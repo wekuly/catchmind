@@ -1,0 +1,11 @@
+---
+description: CSS는 파일별로 분리하고, globals.css에는 전역 기본만 둔다.
+globs: **/*.tsx, **/*.css
+---
+
+# CSS 규칙
+
+- **globals.css**: `:root`, `body` 등 앱 전체 기본 스타일만 둔다.
+- **파일별 CSS**: 스타일이 필요한 TSX/페이지마다 **같은 이름의 .css** 파일을 만들고, 해당 TSX에서 import 한다.
+  - 예: `layout.tsx` → `layout.css`, `page.tsx` → `page.css`, `PresenceList.tsx` → `PresenceList.css`, `item.tsx` → `item.css`
+- 새 컴포넌트/페이지를 만들 때도 같은 규칙을 따른다. (새 Foo.tsx → Foo.css 생성 후 `import './Foo.css'`)

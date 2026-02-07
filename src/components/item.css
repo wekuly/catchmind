@@ -1,0 +1,25 @@
+/* item.tsx (RandomActivity) 전용 */
+.item {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.item__title {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.item__button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.item__result {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.item__result p {
+  margin: 0.25rem 0;
+}

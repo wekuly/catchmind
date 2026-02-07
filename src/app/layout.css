@@ -1,0 +1,19 @@
+/* layout.tsx 전용 */
+.app-content {
+  min-height: 100vh;
+}
+
+/* 모바일: UI 항상 가로(랜드스케이프) 레이아웃으로 표시 */
+@media (max-width: 768px) and (orientation: portrait) {
+  .app-content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 100vh;
+    height: 100vw;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    overflow-x: auto;
+    overflow-y: auto;
+    min-height: auto;
+  }
+}
