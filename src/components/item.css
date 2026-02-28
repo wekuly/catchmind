@@ -1,20 +1,29 @@
-/* item.tsx (RandomActivity) 전용 */
+/**
+ * item.css
+ * item.tsx(RandomActivity: 랜덤 활동/아이템) 전용 스타일입니다.
+ * BEM: .item, .item__title, .item__button, .item__result
+ */
+
+/* 전체 블록: 가운데 정렬, 상단 여백 */
 .item {
   text-align: center;
   margin-top: 50px;
 }
 
+/* 제목: "🎲 랜덤 활동/아이템" */
 .item__title {
   margin: 0 0 1rem;
   font-size: 1.25rem;
 }
 
+/* "불러오기" 버튼 */
 .item__button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
 }
 
+/* API 결과 영역: 활동/카테고리 텍스트 */
 .item__result {
   margin-top: 20px;
   font-size: 18px;

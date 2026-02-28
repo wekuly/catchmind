@@ -1,4 +1,10 @@
-/* 전역 기본 스타일만 유지 */
+/**
+ * globals.css
+ * 앱 전체에 적용되는 기본 스타일만 정의합니다.
+ * 레이아웃/컴포넌트별 스타일은 각 파일명.css에 둡니다.
+ */
+
+/* CSS 변수 및 루트 기본값: 폰트, 줄간격, 색상, 배경 */
 :root {
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.5;
@@ -7,6 +13,7 @@
   background-color: #ffffff;
 }
 
+/* body: 여백 제거, 최소 너비/높이로 전체 화면 사용 */
 body {
   margin: 0;
   min-width: 320px;

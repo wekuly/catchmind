@@ -1,4 +1,10 @@
-/* PresenceList.tsx 전용 */
+/**
+ * PresenceList.css
+ * PresenceList.tsx(접속자 목록) 전용 스타일입니다.
+ * BEM 방식: .presence-list, .presence-list__title, .presence-list__item--me 등.
+ */
+
+/* 접속자 목록 컨테이너: 우측 상단 고정, 카드 형태 */
 .presence-list {
   position: fixed;
   top: 1rem;
@@ -12,6 +18,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+/* 제목: "접속자 목록 (N명)" */
 .presence-list__title {
   margin: 0 0 0.5rem;
   font-size: 0.875rem;
@@ -19,12 +26,14 @@
   color: #333;
 }
 
+/* 접속자 목록 ul: 리스트 스타일 제거 */
 .presence-list__items {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+/* 접속자 한 명(li): flex, 간격, 폰트 크기 */
 .presence-list__item {
   display: flex;
   align-items: center;
@@ -34,17 +43,20 @@
   color: #555;
 }
 
+/* 현재 나(본인) 항목: 파란색 강조 */
 .presence-list__item--me {
   color: #1976d2;
   font-weight: 500;
 }
 
+/* 접속자 이름: 넘치면 말줄임 */
 .presence-list__name {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
+/* "나" 뱃지: 작은 파란 칩 */
 .presence-list__badge {
   flex-shrink: 0;
   font-size: 0.7rem;
